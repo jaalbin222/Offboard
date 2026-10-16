@@ -1,0 +1,11 @@
+{
+  "name": "JustDeleteMe",
+  "source": "https://github.com/jdm-contrib/jdm",
+  "sourceFile": "https://github.com/jdm-contrib/jdm/blob/master/_data/sites.json",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2013-2020 Robb Lewis, The JDM Contrib Team, & various contributors",
+  "retrieved": "2026-10-16",
+  "serviceCount": 2670,
+  "popularCount": 234,
+  "unmatchedPopularDomains": []
+}
