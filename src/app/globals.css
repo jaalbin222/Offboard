@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f3efe6;
+  --paper-2: #e7e0d2;
+  --card: #fffdf8;
+  --ink: #1c1915;
+  --muted: #5e574c;
+  --faint: #8a8174;
+  --line: #e0d6c6;
+  --pine: #1b4d3e;
+  --pine-2: #13382d;
+  --mist: #e5f2eb;
+  --sienna: #9a3412;
+  --sienna-soft: #fde8dc;
+  --gold: #8a5a12;
+  --gold-soft: #f8efd8;
+  --sea: #1e4e6b;
+  --sea-soft: #e4f0f6;
+  --stone: #44403c;
+  --stone-soft: #efeae2;
+  --good: #1f6b45;
+  --shadow: 0 24px 60px rgba(68, 48, 22, 0.08);
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-pine: var(--pine);
+  --color-pine-2: var(--pine-2);
+  --color-mist: var(--mist);
+  --color-sienna: var(--sienna);
+  --color-sienna-soft: var(--sienna-soft);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-sea: var(--sea);
+  --color-sea-soft: var(--sea-soft);
+  --color-stone: var(--stone);
+  --color-stone-soft: var(--stone-soft);
+  --color-good: var(--good);
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(1100px 480px at 0% -10%, rgba(27, 77, 62, 0.09), transparent 55%),
+    radial-gradient(800px 420px at 100% 0%, rgba(154, 52, 18, 0.07), transparent 50%),
+    var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: #d7ebe1;
+}
+
+:focus-visible {
+  outline: 2px solid var(--pine);
+  outline-offset: 3px;
+}
+
+dialog {
+  margin: auto;
+  width: min(36rem, calc(100% - 2rem));
+  max-height: min(40rem, calc(100% - 2rem));
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  padding: 0;
+  background: var(--card);
+  color: inherit;
+  box-shadow: var(--shadow);
+}
+
+dialog::backdrop {
+  background: rgba(28, 25, 21, 0.46);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
